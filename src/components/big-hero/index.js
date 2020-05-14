@@ -4,7 +4,19 @@ import './style.css';
 
 
 const fetchHeroQuote = name => {
-  return 'One of a race of persons who lived before the division of labor had been carried to such a pitch of differentiation, and who followed the primitive economic maxim, “Every man his own horse.” The best of the lot was Chiron, who to the wisdom and virtues of the horse added the fleetness of man.';
+  const quotes = [
+    'A man is a method, a progressive arrangement, a selecting principle, gathering his like unto him wherever he goes. What you are comes to you.',
+    'Yes, I am proud; I must be proud to see Men not afraid of God, afraid of me.',
+    'The danger is not that a particular class is unfit to govern. Every class is unfit to govern.',
+    'I\'m moving to Mars next week, so if you have any boxes.',
+    'What is defeat? Nothing but education, nothing but the first step to something better.',
+    'The difference between failure and success is doing a thing nearly right and doing a thing exactly right.',
+    'An ambassador is an honest man sent abroad to lie for his country.',
+    'She looked as though butter wouldn\'t melt in her mouth ... or anywhere else.',
+    'Too often whe give children answers to remember rather than problems to solve.'
+  ];
+  const randomIdx = Math.floor(Math.random() * quotes.length);
+  return quotes[randomIdx];
 }
 
 
@@ -18,6 +30,10 @@ const BigHero = ({ hero }) => {
     setQuote(fetchHeroQuote(hero.fakeName))
   }, [hero]);
 
+  const onClick = () => {
+    setQuote(fetchHeroQuote(hero.fakeName))
+  }
+
   return (
     <div className='big-hero-container'>
       <div className='hero-name'>{hero.fakeName}</div>
@@ -27,6 +43,9 @@ const BigHero = ({ hero }) => {
         </div>
         <div className='hero-big-info-container'>
           {quote}
+        </div>
+        <div className='hero-generate-another'>
+          <button className='hero-button' onClick={onClick}>New</button>
         </div>
       </div>
       

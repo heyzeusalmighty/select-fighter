@@ -63,6 +63,7 @@ const SelectScreen = () => {
       <div className="hero-selection-grid">
         {heroes.map(x => (
           <Hero
+            key={x.id}
             hero={x}
             isSelected={x.id === selectedHero.id}
             onClick={onSelection}

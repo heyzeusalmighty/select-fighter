@@ -4,13 +4,13 @@
 }
 
 .info-panel {
+	position: relative;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .hero-big-picture-container {
 	max-height: 50vh;
-	flex: 3;
 }
 
 .big-hero-picture {
@@ -20,11 +20,21 @@
 }
 
 .hero-big-info-container {
-	display: flex;
-	flex-direction: column;
-	flex: 2;
+	position: absolute;
+	right: 0;
+	left: 30vw;
+	background: rgba(0, 0, 0, 0.45);
+	padding: 20px;
+	border-radius: 4px;
 }
 
 .hero-name {
 	margin-bottom: 20px;
+}
+
+.hero-button {
+	height: 50px;
+	width: 100px;
+	font-family: inherit;
+	text-transform: uppercase;
 }
