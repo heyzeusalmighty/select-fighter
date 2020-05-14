@@ -14,7 +14,35 @@
 }
 
 .hero-selection-grid {
-  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+
+
+@media (max-width: 900px) {
+  /* .hero-selection-grid {
+    height: 125px;
+    width: 125px;
+  } */
+}
+
+@media (max-width: 375px) {
+  .select-screen-container {
+    padding: 20px 0;
+  }
+
+  .hero-container {
+    margin: unset;
+    margin-top: 50px;
+    padding: 10px;
+  }
 }

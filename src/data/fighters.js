@@ -11,6 +11,8 @@ export default [
     alignment: 'Good',
     alignmentType: 'good',
     active: true,
+    smallImage: 'ryu_headshot_compressed.jpg',
+    largeImage: 'ryu_compressed.png',
   },
   {
     id: 'ken',
@@ -24,6 +26,8 @@ export default [
     alignment: 'Good',
     alignmentType: 'good',
     active: false,
+    smallImage: 'ken_headshot_compressed.jpg',
+    largeImage: 'ken-compressed.png',
   },
   {
     id: 'chun_li',
@@ -37,6 +41,8 @@ export default [
     alignment: 'Lawful Good',
     alignmentType: 'good',
     active: false,
+    smallImage: 'chun_li_headshot_compressed.jpg',
+    largeImage: 'chun_li-compressed.png',
   },
   {
     id: 'dee_jay',
@@ -50,6 +56,8 @@ export default [
     alignment: 'Good',
     alignmentType: 'good',
     active: false,
+    smallImage: 'dj_headshot_compressed.jpg',
+    largeImage: 'dj-compressed.png',
   },
   {
     id: 'cammy',
@@ -63,6 +71,8 @@ export default [
     alignment: 'Good/Lawful Neutral',
     alignmentType: 'good',
     active: false,
+    smallImage: 'cammy_headshot_compressed.jpg',
+    largeImage: 'cammie-compressor.png',
   },
   {
     id: 'sagat',
@@ -76,6 +86,8 @@ export default [
     alignment: 'Neutral',
     alignmentType: 'neutral',
     active: false,
+    smallImage: 'sagat_headshot_compressed.jpg',
+    largeImage: 'sagat-compressed.png',
   },
   {
     id: 'zangief',
@@ -89,6 +101,8 @@ export default [
     alignment: 'Evil',
     alignmentType: 'evil',
     active: false,
+    smallImage: 'zangief_headshot_compressed.jpg',
+    largeImage: 'zangief-compressed.png',
   },
   {
     id: 'akuma',
@@ -102,6 +116,8 @@ export default [
     alignment: 'Neutral Evil',
     alignmentType: 'evil',
     active: false,
+    smallImage: 'akuma_headshot_compressed.jpg',
+    largeImage: 'akuma_compressed.jpg',
   },
   {
     id: 'bison',
@@ -115,6 +131,8 @@ export default [
     alignment: 'Evil',
     alignmentType: 'evil',
     active: false,
+    smallImage: 'bison_headshot_compressed.jpg',
+    largeImage: 'bison-compressor.png',
   },
   {
     id: 'blanka',
@@ -128,5 +146,7 @@ export default [
     alignment: 'Good',
     alignmentType: 'good',
     active: false,
+    smallImage: 'blanka_headshot_compressed.jpg',
+    largeImage: 'blanka_compressed.png',
   },
 ];

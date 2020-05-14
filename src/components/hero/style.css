@@ -1,5 +1,80 @@
-.hero-selection-box {
+.hero-selected-box {
   height: 150px;
   width: 150px;
   border: 1px solid yellow;
+}
+
+.hero-selection-box {
+  height: 150px;
+  width: 150px;
+  border: 1px solid gray;
+}
+
+.hero-picture {
+  height: 150px;
+  width: 150px;
+  filter: grayscale(1);
+}
+
+.hero-picture-hover {
+  height: 150px;
+  width: 150px;
+}
+
+.hero-picture-image {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+/* SMALL SCREEN */
+@media (max-width: 900px) {
+  .hero-picture {
+    height: 125px;
+    width: 125px;
+    filter: grayscale(1);
+  }
+
+  .hero-picture-hover {
+    height: 125px;
+    width: 125px;
+  }
+
+  .hero-selection-box {
+    height: 125px;
+    width: 125px;
+    border: 1px solid gray;
+  }
+
+  .hero-selected-box {
+    height: 125px;
+    width: 125px;
+    border: 1px solid yellow;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 375px) {
+  .hero-picture {
+    height: 50px;
+    width: 50px;
+    filter: grayscale(1);
+  }
+
+  .hero-picture-hover {
+    height: 50px;
+    width: 50px;
+  }
+
+  .hero-selection-box {
+    height: 50px;
+    width: 50px;
+    border: 1px solid gray;
+  }
+
+  .hero-selected-box {
+    height: 50px;
+    width: 50px;
+    border: 1px solid yellow;
+  }
 }

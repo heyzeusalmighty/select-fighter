@@ -1,0 +1,26 @@
+.big-hero-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-panel {
+	display: flex;
+	flex-direction: row;
+}
+
+.hero-big-picture-container {
+	max-height: 50vh;
+	flex: 3;
+}
+
+.big-hero-picture {
+	height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.hero-big-info-container {
+	display: flex;
+	flex-direction: column;
+	flex: 2;
+}
