@@ -29,7 +29,6 @@ const BigHero = ({ hero }) => {
           <button className='hero-button' onClick={onClick}>New</button>
         </div>
       </div>
-      
     </div>
   );
 };
