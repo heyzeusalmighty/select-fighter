@@ -52,7 +52,7 @@ h1 {
 
 .title h1 {
   background: -webkit-linear-gradient(rgb(255, 18, 18) 30%, rgb(255, 215, 38));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

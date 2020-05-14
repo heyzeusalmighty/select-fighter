@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BigHero from '../components/big-hero';
 import Hero from '../components/hero/index';
+import UserService from '../user-service';
 
 import fighters from '../data/fighters';
 import './select.css';
@@ -18,27 +19,13 @@ const shuffle = array => {
   return array;
 }
 
-
-const dummyUsers = {
-  v: {},
-  eric: {},
-  tyler: {},
-  scot: {},
-  dustin: {},
-  steven: {},
-  aaron: {},
-  thomas: {},
-  jaime: {},
-  james: {},
-}
-
-
 const SelectScreen = () => {
   const [selectedHero, setSelectedHero] = useState(fighters[0]);
   const [heroes, setHeroes] = useState([]);
 
   useEffect(() => {
-    const shuffled = shuffle(Object.keys(dummyUsers));
+    const dummies = UserService.getUserList();
+    const shuffled = shuffle(dummies);
     const newFighters = fighters.map((x, idx) => ({
       ...x,
       fakeName: shuffled[idx],
