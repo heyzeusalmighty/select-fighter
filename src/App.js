@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Splash from './pages/splash';
+import SelectScreen from './pages/select';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [showSelect, setShowSelect] = useState(false);
+
+  const renderPage = () => {
+    if (showSelect) {
+      return (
+        <SelectScreen />
+      )
+    }
+    return <Splash onClick={() => setShowSelect(true)} />;
+  }
+
+  return renderPage();
 }
 
 export default App;

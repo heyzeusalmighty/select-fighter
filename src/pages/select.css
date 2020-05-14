@@ -1,0 +1,20 @@
+.select-screen-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #015492, #010134);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.hero-selection-grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
