@@ -24,3 +24,7 @@
 	flex-direction: column;
 	flex: 2;
 }
+
+.hero-name {
+	margin-bottom: 20px;
+}

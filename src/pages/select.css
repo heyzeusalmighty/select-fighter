@@ -4,7 +4,7 @@
   background: linear-gradient(to bottom, #015492, #010134);
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .hero-container {
@@ -37,7 +37,7 @@
 
 @media (max-width: 375px) {
   .select-screen-container {
-    padding: 20px 0;
+    /* padding: 20px 0; */
   }
 
   .hero-container {
