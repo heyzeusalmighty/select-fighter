@@ -24,14 +24,16 @@ const SelectScreen = () => {
   const [heroes, setHeroes] = useState([]);
 
   useEffect(() => {
-    const dummies = UserService.getUserList();
-    const shuffled = shuffle(dummies);
-    const newFighters = fighters.map((x, idx) => ({
-      ...x,
-      fakeName: shuffled[idx],
-    }));
-    setHeroes(newFighters);
-    setSelectedHero(newFighters[0]);
+    UserService.getUserList()
+      .then(dummies => {
+        const shuffled = shuffle(dummies);
+        const newFighters = fighters.map((x, idx) => ({
+          ...x,
+          fakeName: shuffled[idx],
+        }));
+        setHeroes(newFighters);
+        setSelectedHero(newFighters[0]);
+      });
   }, []);
 
   const onSelection = id => {

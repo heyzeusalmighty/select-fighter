@@ -38,3 +38,18 @@
 	font-family: inherit;
 	text-transform: uppercase;
 }
+
+@media (min-width: 900px) {
+  .hero-big-info-container {
+    right: 0;
+    left: 0;
+    top: 30px;
+  }
+
+  .hero-generate-another {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 30px;
+  }
+}
